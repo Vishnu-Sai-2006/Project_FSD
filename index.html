@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Donation Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blood Donation Finder</h1>
+        <p>Find blood donors near you ❤️</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Search Donor</h2>
+
+        <form id="searchForm">
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <select id="bloodGroup" required>
+                <option value="">Select Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+
+            <input type="text" id="location" placeholder="Enter location" required>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <h2>Available Donors</h2>
+        <div id="results"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
